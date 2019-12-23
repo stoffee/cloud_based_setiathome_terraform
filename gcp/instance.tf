@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-  name         = "SETIatHome"
+  name         = "setiathome"
   machine_type = var.instance_type
   zone         = var.gcp_zone
 
