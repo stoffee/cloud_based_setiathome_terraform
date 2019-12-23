@@ -39,7 +39,7 @@ resource "aws_instance" "demo" {
 
   #do not change this from t2.micro, unless you want to trigger sentinel
   # instance_type = "t2.micro"
-   instance_type = "g2.8xlarge"
+   instance_type = "g4dn.2xlarge"
 
   #key_name = "cdunlap-aws"
   key_name = "${aws_key_pair.env0-key-pair.key_name}"
