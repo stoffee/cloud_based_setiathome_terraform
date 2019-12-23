@@ -41,7 +41,8 @@ resource "aws_instance" "demo" {
   # instance_type = "t2.micro"
    instance_type = "g2.8xlarge"
 
-  key_name = "cdunlap-aws"
+  #key_name = "cdunlap-aws"
+  key_name = "${aws_key_pair.env0-key-pair.key_name}"
 
   tags = {
     Name = "random_pet.server.id"
