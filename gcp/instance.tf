@@ -3,7 +3,7 @@ resource "google_compute_instance" "default" {
   machine_type = var.instance_type
   zone         = var.gcp_zone
 
-  tags = ["Mission", "Seti"]
+  tags = ["mission", "seti"]
 
   boot_disk {
     initialize_params {
