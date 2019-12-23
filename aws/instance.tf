@@ -11,4 +11,14 @@ resource "aws_instance" "demo" {
     Owner = "chrisd"
     TTL   = "24hrs"
   }
+  user_data = data.template_file.cloud-init.rendered
+}
+
+data "template_file" "cloud-init" {
+  template = file("cloud-init.tpl")
+
+#  vars = {
+#    vaultdb_username = var.vaultdb_username
+#    vaultdb_password = var.vaultdb_password
+#  }
 }
