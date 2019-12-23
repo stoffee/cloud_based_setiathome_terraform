@@ -1,13 +1,29 @@
-resource "aws_instance" "demo" {
- ami = "ami-02c8040256f30fb45"
+data "aws_ami" "ubuntu" {
+  most_recent = true
 
-   instance_type = "t2.xlarge"
-   #instance_type = "g4dn.xlarge"
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*"]
+  }
 
-  key_name = "${aws_key_pair.env0-key-pair.key_name}"
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
+  owners = ["099720109477"] # Canonical
+}
+
+
+resource "aws_instance" "setiathome" {
+ ami =  data.aws_ami.ubuntu.id
+
+   instance_type = var.instance_type
+
+  key_name = var.ssh_key_name
 
   tags = {
-    #Name = "random_pet.server.id"
+    Name = random_pet.server.id
     Owner = "chrisd"
     TTL   = "24hrs"
   }
@@ -17,8 +33,7 @@ resource "aws_instance" "demo" {
 data "template_file" "cloud-init" {
   template = file("cloud-init.tpl")
 
-#  vars = {
-#    vaultdb_username = var.vaultdb_username
-#    vaultdb_password = var.vaultdb_password
-#  }
+  vars = {
+    boinc_project_id = var.boinc_project_id
+  }
 }
