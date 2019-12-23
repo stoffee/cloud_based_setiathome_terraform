@@ -63,10 +63,10 @@ resource "aws_instance" "demo" {
 
 output "private_ip" {
   description = "Private IP of instance"
-  value       = join("", aws_instance.demo.*.private_ip)
+  value       = join("", "aws_instance.demo.*.private_ip")
 }
 
 output "public_ip" {
   description = "Public IP of instance (or EIP)"
-  value       = join("", aws_instance.demo.*.public_ip)
+  value       = join("", "aws_instance.demo.*.public_ip")
 }
