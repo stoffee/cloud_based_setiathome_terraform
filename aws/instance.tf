@@ -7,8 +7,7 @@ resource "aws_instance" "demo" {
   key_name = "${aws_key_pair.env0-key-pair.key_name}"
 
   tags = {
-    Name = "random_pet.server.id"
-    #uncomment this for working, comment out for sentinel policy trigger
+    #Name = "random_pet.server.id"
     Owner = "chrisd"
     TTL   = "24hrs"
   }
