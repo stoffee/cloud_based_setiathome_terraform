@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-  name         = "setiathome"
+  name         = random_pet.server.id-"setiathome"
   machine_type = var.instance_type
   zone         = var.gcp_zone
 
@@ -34,7 +34,7 @@ resource "google_compute_instance" "default" {
     sleep 12
     systemctl restart boinc-client
     sleep 12
-    sudo boinccmd --project_attach http://setiathome.berkeley.edu 51f200480b1473b1b972f89b051a31d3
+    sudo boinccmd --project_attach http://setiathome.berkeley.edu var.boinc_project_id
     sleep 12
     systemctl restart boinc-client
   SCRIPT
