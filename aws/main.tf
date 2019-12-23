@@ -34,7 +34,8 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "demo" {
-  ami = "data.aws_ami.ubuntu.id"
+ # ami = "data.aws_ami.ubuntu.id"
+ ami = "ami-02c8040256f30fb45"
 
   #do not change this from t2.micro, unless you want to trigger sentinel
   # instance_type = "t2.micro"
