@@ -45,16 +45,16 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "demo" {
-  ami = data.aws_ami.ubuntu.id
+  ami = "data.aws_ami.ubuntu.id"
 
   #do not change this from t2.micro, unless you want to trigger sentinel
   # instance_type = "t2.micro"
-   instance_type = "t2.2xlarge"
+   instance_type = "g2.8xlarge"
 
   key_name = "cdunlap-aws"
 
   tags = {
-    Name = random_pet.server.id
+    Name = "random_pet.server.id"
     #uncomment this for working, comment out for sentinel policy trigger
     Owner = "chrisd"
     TTL   = "24hrs"
