@@ -1,14 +1,3 @@
-terraform {
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "cdunlap"
-
-    workspaces {
-      name = "aws-sentinel-ec2-geofence-tagging-sizing"
-    }
-  }
-}
-
 resource "random_pet" "server" {
 }
 
