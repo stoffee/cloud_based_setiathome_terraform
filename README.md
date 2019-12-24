@@ -1,7 +1,7 @@
 # Deploy Seti at Home in the Cloud or Pay4Seti
 
-Got some free credits you want to waste?
-Looking for a different way to GIVE this year?
+- Got some free credits you want to waste?
+- Looking for a different way to GIVE this year?
 
 This will deploy a [Seti@Home](https://setiathome.berkeley.edu/) server in the cloud of your choice with [Terraform](https://www.terraform.io/).
 That server will then churn at [100% until you turn it off](https://setiathome.berkeley.edu/top_hosts.php).
