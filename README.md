@@ -20,7 +20,13 @@ You can download the [Terraform Binary](https://www.terraform.io/downloads.html)
 1. drop your gcp_credentials.json in the root gcp folder
 
 
-For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account).
+For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account). 
+1. Fork this repo
+1. Sing up for a Terraform Cloud account
+1. Authorize a GitHub/BitBucket/ADO connection
+1. Find this repo you just forked
+1. Create a workspace from this repo
+   * Set the working directiory to the cloud you want gcp/aws/azure
 
 ### [GCP](https://console.cloud.google.com/)
 #### Required Variables
@@ -31,8 +37,13 @@ For those that aren't as familiar you can sign up for a [free account on Terrafo
 * [instance_type](https://cloud.google.com/compute/docs/machine-types)
 * [gcp_credentials](https://cloud.google.com/docs/authentication/getting-started)
 
-### AWS
+For Terraform Cloud, just enter the variables on the variables page in the workspace.
 
-To use the aws repo you must set the two following variables:
-aws_access_key
-aws_secret_key
+### AWS
+#### Required Variables
+* [boinc_project_id](https://boinc.berkeley.edu/wiki/Boinccmd_tool
+* [ssh_key_name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+* [aws_access_key](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/)
+* [aws_secret_key](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/)
+* [aws_region](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+* [instance_type](https://aws.amazon.com/ec2/instance-types/)
