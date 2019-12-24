@@ -16,8 +16,6 @@ This repo is [Terraform](https://www.terraform.io/) code.
 
 You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar. 
 1. Copy the setiathome.auto.tfvars.example to setiathome.auto.tfvars
-1. Uncomment the credentials line in the provider.tf 
-1. Drop your gcp_credentials.json in the root gcp folder
 
 
 For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account). 
@@ -27,6 +25,8 @@ For those that aren't as familiar you can sign up for a [free account on Terrafo
 1. Find this repo you just forked
 1. Create a workspace from this repo
    * Set the working directiory to the cloud you want gcp/aws/azure
+1. Setup the required variables
+1. Queue a job
 
 ### [GCP](https://console.cloud.google.com/)
 #### Required Variables
@@ -36,6 +36,8 @@ For those that aren't as familiar you can sign up for a [free account on Terrafo
 * [boinc_project_id](https://boinc.berkeley.edu/wiki/Boinccmd_tool)
 * [instance_type](https://cloud.google.com/compute/docs/machine-types)
 * [gcp_credentials](https://cloud.google.com/docs/authentication/getting-started)
+    * Uncomment the credentials line in the provider.tf 
+    * Drop your gcp_credentials.json in the root gcp folder, if you are rolling that way
 
 For Terraform Cloud, just enter the variables on the variables page in the workspace.
 
