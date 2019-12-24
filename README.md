@@ -7,7 +7,7 @@ This will deploy a [Seti@Home](https://setiathome.berkeley.edu/) server in the c
 That server will then churn at [100% until you turn it off](https://setiathome.berkeley.edu/top_hosts.php).
 You will be putting your $$$ into a big internet tube that shoots that money out into space to search for life!
 
-![aliens](https://www.snopes.com/tachyon/2018/06/aliens.jpg)
+![aliens](http://www.mcgilltribune.com/wp-content/uploads/2019/11/ancient-aliens-S12-desktop-2048x1152-copy-1-1000x500.jpg)
 
 ## How to use this repo
 
