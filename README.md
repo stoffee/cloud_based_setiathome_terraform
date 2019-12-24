@@ -47,3 +47,8 @@ For Terraform Cloud, just enter the variables on the variables page in the works
 * [aws_secret_key](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/)
 * [aws_region](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 * [instance_type](https://aws.amazon.com/ec2/instance-types/)
+
+### AliCloud
+#### Required Variables
+* [access_key](https://www.alibabacloud.com/help/doc-detail/29009.htm)
+* [secret_key](https://www.alibabacloud.com/help/doc-detail/29009.htm)
