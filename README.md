@@ -1,5 +1,5 @@
-# Deploy Seti at Home in the Cloud or Pay4Seti
-
+# Deploy Seti at Home in the Cloud aka Pay4Seti aka Seti as a Service
+ 
 - Got some free credits you want to waste?
 - Looking for a different way to GIVE this year?
 
@@ -16,16 +16,16 @@ This repo is [Terraform](https://www.terraform.io/) code.
 
 You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar.
 
-For those that aren't as familiar you cna sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account).
+For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account).
 
 ### [GCP](https://console.cloud.google.com/)
 #### Required Variables
-* gcp_project_id
-* gcp_region
-* gcp_zone
-* boinc_project_id
-* instance_type
-* gcp_credentials
+* [gcp_project_id](https://support.google.com/googleapi/answer/7014113?hl=en)
+* [gcp_region](https://cloud.google.com/compute/docs/regions-zones/)
+* [gcp_zone](https://cloud.google.com/compute/docs/regions-zones/)
+* [boinc_project_id --lookup_account URL email password] (https://boinc.berkeley.edu/wiki/Boinccmd_tool)
+* [instance_type](https://cloud.google.com/compute/docs/machine-types)
+* [gcp_credentials] (https://cloud.google.com/docs/authentication/getting-started)
 
 ### AWS
 
