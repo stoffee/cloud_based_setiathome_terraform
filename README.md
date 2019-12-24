@@ -14,7 +14,11 @@ That server will then churn at [100% until you turn it off](https://setiathome.b
 ## How to use this repo
 This repo is [Terraform](https://www.terraform.io/) code. 
 
-You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar.
+You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar. 
+1. copy the setiathome.auto.tfvars.example to setiathome.auto.tfvars
+1. uncomment the credentials line in the provider.tf 
+1. drop your gcp_credentials.json in the root gcp folder
+
 
 For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account).
 
@@ -23,9 +27,9 @@ For those that aren't as familiar you can sign up for a [free account on Terrafo
 * [gcp_project_id](https://support.google.com/googleapi/answer/7014113?hl=en)
 * [gcp_region](https://cloud.google.com/compute/docs/regions-zones/)
 * [gcp_zone](https://cloud.google.com/compute/docs/regions-zones/)
-* [boinc_project_id --lookup_account URL email password] (https://boinc.berkeley.edu/wiki/Boinccmd_tool)
+* [boinc_project_id](https://boinc.berkeley.edu/wiki/Boinccmd_tool)
 * [instance_type](https://cloud.google.com/compute/docs/machine-types)
-* [gcp_credentials] (https://cloud.google.com/docs/authentication/getting-started)
+* [gcp_credentials](https://cloud.google.com/docs/authentication/getting-started)
 
 ### AWS
 
