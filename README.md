@@ -15,14 +15,14 @@ That server will then churn at [100% until you turn it off](https://setiathome.b
 This repo is [Terraform](https://www.terraform.io/) code. 
 
 You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar. 
-1. copy the setiathome.auto.tfvars.example to setiathome.auto.tfvars
-1. uncomment the credentials line in the provider.tf 
-1. drop your gcp_credentials.json in the root gcp folder
+1. Copy the setiathome.auto.tfvars.example to setiathome.auto.tfvars
+1. Uncomment the credentials line in the provider.tf 
+1. Drop your gcp_credentials.json in the root gcp folder
 
 
 For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account). 
 1. Fork this repo
-1. Sing up for a Terraform Cloud account
+1. Sign up for a Terraform Cloud account
 1. Authorize a GitHub/BitBucket/ADO connection
 1. Find this repo you just forked
 1. Create a workspace from this repo
