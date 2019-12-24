@@ -12,7 +12,22 @@ That server will then churn at [100% until you turn it off](https://setiathome.b
 ![aliens](http://www.mcgilltribune.com/wp-content/uploads/2019/11/ancient-aliens-S12-desktop-2048x1152-copy-1-1000x500.jpg)
 
 ## How to use this repo
+This repo is [Terraform](https://www.terraform.io/) code. 
 
+You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar.
+
+For those that aren't as familiar you cna sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account).
+
+### [GCP](https://console.cloud.google.com/)
+#### Required Variables
+* gcp_project_id
+* gcp_region
+* gcp_zone
+* boinc_project_id
+* instance_type
+* gcp_credentials
+
+### AWS
 
 To use the aws repo you must set the two following variables:
 aws_access_key
