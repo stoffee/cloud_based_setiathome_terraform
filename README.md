@@ -41,7 +41,7 @@ For Terraform Cloud, just enter the variables on the variables page in the works
 
 ### AWS
 #### Required Variables
-* [boinc_project_id](https://boinc.berkeley.edu/wiki/Boinccmd_tool
+* [boinc_project_id](https://boinc.berkeley.edu/wiki/Boinccmd_tool)
 * [ssh_key_name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 * [aws_access_key](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/)
 * [aws_secret_key](https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/)
