@@ -1,4 +1,4 @@
-# Deploy Seti at Home in the Cloud aka Pay4Seti aka Seti as a Service
+# Deploy SETI at Home in the Cloud aka Pay4SETI aka SETI as a Service
  
 - Got some free credits you want to waste?
 - Looking for a different way to GIVE this year?
