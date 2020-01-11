@@ -15,7 +15,7 @@ That server will then churn at [100% until you turn it off](https://setiathome.b
 This repo is [Terraform](https://www.terraform.io/) code. 
 
 You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar. 
-1. Copy the setiathome.auto.tfvars.example to setiathome.auto.tfvars and make your edits
+1. Copy the ```setiathome.auto.tfvars.example``` to ```setiathome.auto.tfvars``` and make your edits
 1. ```terraform init && terraform plan && terraform apply -auto-apply```
 1. ```terraform destroy``` to destroy it
 
