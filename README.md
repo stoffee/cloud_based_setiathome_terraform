@@ -16,7 +16,8 @@ This repo is [Terraform](https://www.terraform.io/) code.
 
 You can download the [Terraform Binary](https://www.terraform.io/downloads.html) if you are already familiar. 
 1. Copy the setiathome.auto.tfvars.example to setiathome.auto.tfvars and make your edits
-1. terraform init && terraform plan && terraform apply
+1. ```terraform init && terraform plan && terraform apply -auto-apply```
+1. ```terraform destroy``` to destroy it
 
 
 For those that aren't as familiar you can sign up for a [free account on Terraform Cloud](https://app.terraform.io/signup/account). 
