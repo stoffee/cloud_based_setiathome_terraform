@@ -34,12 +34,12 @@ resource "google_compute_instance" "default" {
     sleep 3
     systemctl restart boinc-client
     sleep 30
-    sudo boinccmd --project_attach http://www.worldcommunitygrid.org/ var.boinc_project_id
+    sudo boinccmd --project_attach http://www.worldcommunitygrid.org/ 0abc390da3c3b820dd884024d84d8cbf
     sleep 30
     systemctl restart boinc-client
     sleep 120
     sudo boinccmd --project http://www.worldcommunitygrid.org/ detach
-    sudo boinccmd --project_attach http://www.worldcommunitygrid.org/ var.boinc_project_id
+    sudo boinccmd --project_attach http://www.worldcommunitygrid.org/ 0abc390da3c3b820dd884024d84d8cbf
   SCRIPT
 
   service_account {
