@@ -31,11 +31,11 @@ resource "google_compute_instance" "default" {
   #metadata_startup_script = "echo hello_umm_hello > /test.txt"
   metadata_startup_script = <<SCRIPT
     sudo apt update && sudo apt install -y unzip jq boinc-client dnsutils
-    sleep 12
+    sleep 3
     systemctl restart boinc-client
-    sleep 12
+    sleep 30
     sudo boinccmd --project_attach http://www.worldcommunitygrid.org/ var.boinc_project_id
-    sleep 12
+    sleep 30
     systemctl restart boinc-client
     sleep 120
     sudo boinccmd --project http://www.worldcommunitygrid.org/ detach
