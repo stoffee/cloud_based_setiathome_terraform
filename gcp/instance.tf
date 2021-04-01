@@ -28,12 +28,6 @@ resource "google_compute_instance" "default" {
     Mission = "Seti"
   }
 
-  output "instance_id" {
-  value = google_compute_instance.default.instance_id
-}
-    output "id" {
-  value = google_compute_instance.default.id
-}
   #metadata_startup_script = "echo hello_umm_hello > /test.txt"
   metadata_startup_script = <<SCRIPT
     sudo apt update && sudo apt install -y unzip jq boinc-client dnsutils
