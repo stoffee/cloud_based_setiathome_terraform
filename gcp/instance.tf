@@ -3,7 +3,7 @@ resource "google_compute_instance" "default" {
   machine_type = var.instance_type
   zone         = var.gcp_zone
 
-  tags = ["mission", "seti"]
+  tags = ["mission", "prod"]
 
   boot_disk {
     initialize_params {
@@ -25,7 +25,7 @@ resource "google_compute_instance" "default" {
   }
 
   metadata = {
-    Mission = "Seti"
+    Mission = "Prod"
   }
 
   #metadata_startup_script = "echo hello_umm_hello > /test.txt"
