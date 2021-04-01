@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-  name         = "${random_pet.server.id}-wcg"
+  name         = "${random_pet.server.id}-proj"
   machine_type = var.instance_type
   zone         = var.gcp_zone
 
