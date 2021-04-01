@@ -34,7 +34,7 @@ resource "google_compute_instance" "default" {
     sleep 12
     systemctl restart boinc-client
     sleep 12
-    sudo boinccmd --project_attach http://setiathome.berkeley.edu var.boinc_project_id
+    sudo boinccmd --project_attach https://www.worldcommunitygrid.org/ var.boinc_project_id
     sleep 12
     systemctl restart boinc-client
   SCRIPT
